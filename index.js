@@ -57,7 +57,6 @@ const start = () => {
         } else {
             return bot.sendMessage(chatId, `Мимо! Не угадал! Это была цифра ${chats[chatId]}`, againOptions)
         }
-
     })
 }
 
