@@ -14,9 +14,12 @@ dependencies:
   nodemon:
     specifier: ^3.0.3
     version: 3.0.3
+  telebot:
+    specifier: ^1.4.1
+    version: 1.4.1
   telebot-vercel:
     specifier: ^1.0.1
-    version: 1.0.1
+    version: 1.0.1(telebot@1.4.1)
   vercel:
     specifier: ^33.5.1
     version: 33.5.1
@@ -2650,7 +2653,7 @@ packages:
       yallist: 4.0.0
     dev: false
 
-  /telebot-vercel@1.0.1:
+  /telebot-vercel@1.0.1(telebot@1.4.1):
     resolution: {integrity: sha512-5ofTPuuihaMThHfS5txU70Ktu8u/v1XtEfcb2acrewoN8Qm7Sr/2GIYO5AUGBd7DqvxNuYIdzOB91KtEkzrzAA==}
     engines: {node: ^18.0.0}
     peerDependencies:
@@ -2658,6 +2661,15 @@ packages:
     peerDependenciesMeta:
       telebot:
         optional: true
+    dependencies:
+      telebot: 1.4.1
+    dev: false
+
+  /telebot@1.4.1:
+    resolution: {integrity: sha512-5EEwMWsWzdT5+d6eu1Zmm/2AQmEINeObciWHOa9/9rWa1aUZyokUH1WD0Ke0vv6nveY8dEIMoxyrcWS0z1lyAQ==}
+    engines: {node: '>= 12.0.0'}
+    dependencies:
+      request: 2.88.2
     dev: false
 
   /time-span@4.0.0:
