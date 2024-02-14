@@ -1,5 +1,5 @@
 import {setWebhook} from "telebot-vercel"
-import bot from "../src"
+import bot from "../index"
 
 const path = "api/telegram.js"
 
