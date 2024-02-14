@@ -1,5 +1,5 @@
 const TelegramApi = require('node-telegram-bot-api')
-const {gameOptions, againOptions} = require('/options')
+const {gameOptions, againOptions} = require('./options')
 
 const token = '6355498340:AAHpfS84MiLuVP5BtzsyLaaBlJDLt6CHC_w'
 
@@ -52,10 +52,10 @@ const start = () => {
             return startGame(chatId)
         }
 
-        if (data === chats[chatId]) {
+        if (parseInt(data) === chats[chatId]) {
             return bot.sendMessage(chatId, `А ты не плох, угадал! Это была цифра ${chats[chatId]}`, againOptions)
         } else {
-            return bot.sendMessage(chatId, `Мимо! Не угадал! Это была фицра ${chats[chatId]}`, againOptions)
+            return bot.sendMessage(chatId, `Мимо! Не угадал! Это была цифра ${chats[chatId]}`, againOptions)
         }
 
     })
