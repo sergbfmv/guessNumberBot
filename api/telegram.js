@@ -1,4 +1,4 @@
 import {start} from "telebot-vercel"
-import bot from "../index"
+import bot from "../src"
 
 export default start({bot})
