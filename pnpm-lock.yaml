@@ -14,6 +14,9 @@ dependencies:
   nodemon:
     specifier: ^3.0.3
     version: 3.0.3
+  telebot-vercel:
+    specifier: ^1.0.1
+    version: 1.0.1
   vercel:
     specifier: ^33.5.1
     version: 33.5.1
@@ -2645,6 +2648,16 @@ packages:
       minizlib: 2.1.2
       mkdirp: 1.0.4
       yallist: 4.0.0
+    dev: false
+
+  /telebot-vercel@1.0.1:
+    resolution: {integrity: sha512-5ofTPuuihaMThHfS5txU70Ktu8u/v1XtEfcb2acrewoN8Qm7Sr/2GIYO5AUGBd7DqvxNuYIdzOB91KtEkzrzAA==}
+    engines: {node: ^18.0.0}
+    peerDependencies:
+      telebot: latest
+    peerDependenciesMeta:
+      telebot:
+        optional: true
     dev: false
 
   /time-span@4.0.0:
